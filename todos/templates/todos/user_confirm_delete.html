@@ -1,0 +1,9 @@
+{% block content %}
+
+    <form method="POST">
+        {% csrf_token %}
+        <button type="submit">Deletar</button>
+        <a href="{% url 'user_list' %}">Voltar</a>
+    </form>
+
+{% endblock %}
